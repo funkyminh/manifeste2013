@@ -1,0 +1,21 @@
+manifeste 2013 wordpress theme
+
+to install on Ircam server, having Wordpress installed
+
+mysqldump -u root -padmin wp_db > wp_db1.sql
+sed -i 's/http:\/\/127.0.0.1\/wordpress/http:\/\/manifeste-staging.ircam.fr/g' wp_db1.sql > wp_db.sql
+// replace http://127.0.0.1/wordpress par http://manifeste-staging.ircam.fr
+scp wp_db.sql goldszmidt@manifeste-staging.ircam.fr:/home/goldszmidt/
+ssh manifeste-staging.ircam.fr
+mysql -h mysql2.ircam.fr -u manifeste_stag -p419oKWfUjjOVM3mwRD45IY4m8SqUOcKCdvVzJP30wmeQy1bnbCSEtatA3tgW0OJG manifeste_staging_wordpress < wp_db.sql
+scp -r /Users/goldszmidt/sam/pro/dev/wordpress/wp-content/uploads/* goldszmidt@manifeste-staging.ircam.fr:/var/www/html/wp-content/uploads/
+
+scp goldszmidt@manifeste-staging.ircam.fr:/var/www/html/wp-content/uploads
+
+
+cd /srv/manifeste/theme-manifeste2013/plugins
+sudo cp -r * /var/www/html/wp-content/plugins/
+
+
+
+sed -i 's/manifeste-staging.ircam.fr/127.0.0.1\/wordpress/g' db.sql > db2.sql

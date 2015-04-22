@@ -1,0 +1,45 @@
+/* Replace WPML styling */
+
+#lang_sel_list ul .icl-en a {
+	display: block;
+	width: 14px;
+	height: 20px;
+	background: url('../images/sprite.png') -100px 0px no-repeat;
+	text-indent: 100%; white-space: nowrap; overflow: hidden;
+	margin-left: 5px;
+	margin-left: 0.357142857rem;
+}
+
+#lang_sel_list ul .icl-fr a {
+	display: block;
+	width: 14px;
+	height: 20px;
+	background: url('../images/sprite.png') -60px 0px no-repeat;
+	text-indent: 100%; white-space: nowrap; overflow: hidden;
+	margin-left: 5px;
+	margin-left: 0.357142857rem;
+}
+
+#lang_sel_list ul .icl-en a.lang_sel_sel {
+	background: url('../images/sprite.png') -80px -30px no-repeat;
+}
+
+#lang_sel_list ul .icl-fr a.lang_sel_sel {
+	background: url('../images/sprite.png') -40px -30px no-repeat;
+}
+
+.page-template-page-templatesvideos-php #lang_sel_list ul .icl-en a.lang_sel_sel,
+.page-template-page-templatesartists-php #lang_sel_list ul .icl-en a.lang_sel_sel {
+	background: url('../images/sprite.png') -80px -30px no-repeat;
+}
+
+.page-template-page-templatesvideos-php #lang_sel_list ul .icl-fr a.lang_sel_sel,
+.page-template-page-templatesartists-php #lang_sel_list ul .icl-fr a.lang_sel_sel {
+	background: url('../images/sprite.png') -40px -30px no-repeat;
+}
+
+.page-template-page-templatesvideos-php #lang_sel_list ul .icl-en a,
+.page-template-page-templatesartists-php #lang_sel_list ul .icl-en a { background: url('../images/sprite.png') -100px -30px no-repeat; }
+
+.page-template-page-templatesvideos-php #lang_sel_list ul .icl-fr a,
+.page-template-page-templatesartists-php #lang_sel_list ul .icl-fr a { background: url('../images/sprite.png') -60px -30px no-repeat; }

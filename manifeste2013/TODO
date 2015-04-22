@@ -1,0 +1,556 @@
+REVIEW MANIFESTE 19/03/2013
+
+Accueil
+  OK manque mot festival
+  OK calendrier calé mai-juin
+  choix des tags
+  OK derniers articles : manque nombre commentaires
+
+Lieux
+  OK enlever commentaire
+
+Artistes
+  une seule catégorie => artistes
+  OK à découvrir aussi : homogénéiser les hauteurs des icones
+
+Programmes
+  OK liens réseaux sociaux en bas
+  KO (on affiche tous les events) pagination en bas de page
+
+Post Tag 
+  OK corriger les slash
+
+Minh&Sam
+fonction synchro avec un seul évènement
+OK afficher la description du tag apres une recherche par tag
+Regarder export typo3
+<p><link>
+OK caler le calendrier ? (mai-juin uniquement)
+pbm caractère oe... voir evenement chantier 2014-2018
+OK Menu droite : calendrier : date colorée si on a cliqué dessus / date en cours. Survol : date en orange
+
+OK
+artiste -> portrait
+event -> evenement
+video -> video
+text -> tribune
+
+--------------------------------------------------------------------------------------------------------------
+
+REVIEW MANIFESTE DELPHINE / MINH (18/03/2013)
+
+TODO Minh
+OK manque date pour les tribunes ??
+OK débuter le calendrier aux dates du festival
+OK liste programme : manque la catégorie (saute ??) 12h et 8h am/pm ??
+OK programme : manque practical info
+OK vidéos : liens partage sociaux en bas uniquement
+
+TODO Fred
+débordement CSS ??
+enlever View all des tweet
+tribunes en page d'accueil ??
+bandeau jaune, en bas débordement ???
+a decouvrir aussi : aligné et non en en dessous
+toutes les pages : trop d'espace début de page et titre.
+laisse tomber : images : L'icone lien externe a coté de la légende
+liste tribunes : images trop grande
+clique programme par calendrier : afficher liste programmé filtré
+
+--------------------------------------------------------------------------------------------------------------
+
+REVIEW MANIFESTE SAM / MINH (18/03/2013)
+
+OK ABANDON copyright : champ caption à "insérer" dans la photo / sinon en dessous / sinon Delphine le gère en photoshop
+OK peut être prévoir une classe pour supprimer les liens externes en target=_blank 
+
+Design
+OK ABANDON Twitter : lien view All http://search.twitter.com/search?q=%23Array
+OK Pbm vidéo à la une --> accent
+OK ABANDON détail d'une évènement : styler l'heure et la date (page content-event.php ligne <?php the_date('j M / H:i'); ?>)
+OK date de l'évenement : le passer dans le menu a droite (date uniquement ss l'horaire) donc Date et Lieux = la date + champs typo horaire et lieux
+OK Delphine va trouver des images tribune liste : peut etre passer les images à droite (règle les cas où il n'y a pas d'image)
+
+Minh
+OK Accueil_Commentaires récents : pas mettre à mais plutot la date sans article(edition de BWP de l'admin)
+OK Accueil_Derniers articles : afficher le nb de commentaires --> marche !!??? voir avec Fred
+NOK Evenements : parsage des PDF / images avec fileadmin/sites/manifeste-2013/ et remplir le champ Programme (mettre url directement)
+OK Liste après recherche tag : ajouter le type d'articles (evenement, artiste, texte). un NON lien
+OK Après détail d'un texte : rajouter la catégorie (la dernière. ex tribune et tribune internaute)
+NOK caractère insécable &nbsp;
+OK Billeterie (lien direct)
+
+--------------------------------------------------------------------------------------------------------------
+
+REVIEW MANIFESTE STAGING DELPHINE / MINH (15/03/2013)
+
+menu droite 
+  commentaire : FF espace trop grand / Safari OK
+  titre en gras : trop gras
+  responsive : safari ?
+  safari : menu et mots clé différent de FF
+  espace blanc sous bandeau jaune ? OK sous chrome
+  langue francais / anglais ?
+  calendrier sur date du festival 
+
+--------------------------------------------------------------------------------------------------------------
+
+REVIEW MANIFESTE STAGING DELPHINE / MINH / SAM / FRED (14/03/2013)
+
+OK Accueil_Commentaires récents : pas mettre à mais plutot la date sans article(edition de BWP de l'admin)
+OK Accueil_Derniers articles : afficher le nb de commentaires
+Evenements : parsage des PDF / images avec fileadmin/sites/manifeste-2013/ et remplir le champ Programme (mettre url directement)
+OK Liste après recherche tag : ajouter le type d'articles (evenement, artiste, texte)
+OK Après détail d'un texte : rajouter la catégorie
+OK Twitter
+OK Aside (future post widget)
+
+--------------------------------------------------------------------------------------------------------------
+
+DEV MINH (13/03/2013)
+
+modif post FRED
+functions.php
+artists.php
+tag.php (new)
+content-artist (new)
+
+OK synchro
+OK tribunes : manque commentaire
+OK césure : pas couper les mots. hyphens (voir avec Fred)
+NOK caractère insécable &nbsp;
+OK navigation via tag : enlever image a la une pour une tribune => faire comme la liste des tribunes (vignettes et résumé)
+OK enlever the title de la page artiste
+OK tag identique pour a découvrir aussi
+
+--------------------------------------------------------------------------------------------------------------
+
+REVIEW MANIFESTE STAGING DELPHINE / MINH (07/03/2013)
+
+Accueil
+  logo ircam trop petit. meme hauteur sur la manifeste sans 2013
+  remonter "festival..." par rapport au menu
+
+  derniers billets
+  laisser l'affichage 3 colonnes (sans effet lecture journal) mais avec une séparation grise fine
+
+  menu droite
+  calendrier : kaki ?
+  "mots clés" pas décalé ?
+  commentaires récents => comme les tweets avec précédent/suivant. Enlever les guillemets
+
+Artistes et vidéos
+  pas de gris sur image/vignette vidéo => couleurs. Pourtour orange au survol image et patronyme
+
+Page d'un évènement
+  highlight : enlever. Gestion directe via éditeur texte WP
+
+Tribunes  
+  Etincelle
+  comportement par défaut : photo couleur, texte noir
+  au survol : pourtour orange sur la photo, texte orange
+  Tribunes
+  enlever l'icone. Ajouter en regard du titre, tribune invité ou commandé en petit orange
+  enlever site web des commentaire, intitulé du bouton "envoyer"
+
+
+Minh
+OK page vidéo : petit descriptif sur 2 lignes en dessous de l'image
+OK tribunes : manque commentaire
+NOK caractère insécable &nbsp;
+OK césure : pas couper les mots. hyphens
+OK navigation via tag : enlever image a la une pour une tribune
+
+--------------------------------------------------------------------------------------------------------------
+
+REVIEW MANIFESTE STAGING DELPHINE / MINH / SAM (04/03/2013)
+
+accueil 
+remettre jaune initial (si texte invisible, changer couleur en noir. faire un test)
+enlever le kaki dans calendrier et icone play de video
+
+
+menu droite
+  - enlever les icones (sauf playlist, tribune, twitter)
+  - supprimer le mot calendrier (remonte colonne)
+  - avant après pour tweet
+  - commentaires récents : liste 3 derniers
+    => inverser tweet et commentaires récents
+
+footer
+  - largeur de la page
+  - 3 logos (tjs en noir et blanc) dans le menu de droite mais uniquement de la homepage
+
+header 
+  - manifeste 2013 pas en transparence
+  - un peu plus d'espace entre le titre festival et le menu
+
+page accueil
+  derniers articles : enlever icone date
+  petit trait à la place des carrés gris, couleur light
+
+page artiste
+  - espaces entre les images
+  - fond gris un peu plus clair
+
+programme
+  - ok
+
+détail d'un programme
+  - enlever les icones
+  - drapeau dans réserver ?? enlever
+  - a découvrir : changer icone concert par icone calendrier
+
+base des archives (navigation par tag)
+  - thumbnail et résumé texte comme page tribune (enlever a découvrir aussi)
+
+
+
+minh
+OK enlever the title de la page artiste
+OK mettre barre de recherche dans menu a droite plutot que header
+OK a découvrir aussi : uniquement sur page détail de n'importe quelle contenu
+OK petite icone en fonction type de contenu
+
+--------------------------------------------------------------------------------------------------------------
+
+REVIEW MANIFESTE STAGING DELPHINE / MINH / FREDERIC (28/02/2013)
+
+couleurs 
+  - bandeau noir, logo orange
+  - colonne de droite jaune moins vif
+  - pourtour gris clair
+  - caroussel : intitulé en blanc
+  - enlever tous les éléments vert kaki et les passer dans le même gris que le pourtour
+
+bandeau
+  - toute la largeur
+  - pas d'espace vide jaune
+  - logo ircam en orange avec effet de transparence blanc (cf affiche festival)
+  - les dates mises en avant (augmentation taille ?)
+  - menu en capitale ?
+  - manque le bouton accueil (cf V3 du doc de Delphine)
+
+accueil
+  - ok pour les proportions galerie et boutons
+  - ok pour le texte et les boutons de partage. Manque lien vers edito
+  - derniers billets : 4 en colonne, quid des blocs gris ? mettre les articles les uns à la suite, lecture journal ?
+  - plus de lettre d'information (cf V3 du doc de Delphine) mais dans le footer
+  - revue de web : uniquement du scoopit avec les titres. Pas de radio, presse...
+
+menu de droite 
+  - player audio ?
+  - nuage de tags ? 
+  - proposez votre tribune ?
+  - tweet ?
+  - enlever partenaires du menu, mettre en bas de la page d'accueil uniquement. logo en noir et blanc pour pas avoir surcharge de couleur
+
+
+evenement
+  - menu droite : date plus visible
+  - a découvrir aussi (enlever le coeur). Proposez un bloc qui se détache du reste de la page
+
+
+Demander 
+  - Gabarit page programme
+
+Envoyer
+  - la V3 du document
+
+--------------------------------------------------------------------------------------------------------------
+
+REVIEW MANIFESTE STAGING DELPHINE / MINH (22/02/2013)
+
+ACCUEIL
+-------
+Derniers articles : OK, sauf réduire à 200 caractères max
+Revue de web : 3 items scoopit, liens vers pages scoopit directement (si possible), enlever résumé, mettre date de publication, From de la page scoopit (si possible)
+Calendrier : OK
+Mots clés : OK (créer d'autres taxonomies et non des tags mots clés pour lier des items en backend ?). Delphine doit voir à l'usage.
+Commentaire récent : manque la date (format court) Mettre "à propos de"
+Dernière vidéo : NOK. Manque titre et un mini résumé
+Player : OK
+Portrait du jour : OK
+Twitter : OK
+Header : OK 
+Footer : OK
+    - Lieux : OK page statique
+    - Partenaire : OK
+    - Newsletter : comment s'abonner ? lien vers s'abonner de www
+    - Contact : OK
+
+Minh
+OK video titre et un mini résumé
+OK derniers articles 200 caractères
+OK si possible : scoop it
+OK commentaire récent : à propos de
+NOK : lettre d'info
+
+ARTISTES
+-------
+Liste des artistes : OK
+Page artiste : 
+    - Image à la Une : NOK aucune info copyright, ni texte, ni positionnement -> Solution créer une nouvelle page content.php pour la bio d'un artiste en enlevant thumbnail
+    - A découvrir aussi : doublons ! fonctionnmenent différent lorsqu'on provient du nuage de tags. Par exemple : Hannigan et Philippin mot clé = voix. Améliorer cette fonctionnalité. Delphine doit saisir d'autres évènements pour voir et comprendre ce fonctionnment.
+    - A découvrir aussi : Text, Video => Traduisible ? est ce possible de modifier leurs libellés ? il faut video (video), evenement (event), tribune (tribune)
+    - Masquer tribunes précédente et suivante. Idem sur tribunes
+ 
+Minh
+OK pour masquer thumbnail dans la page content.php
+OK Masquer tribunes précédente et suivante. Idem sur tribunes
+à découvrir aussi
+
+PROGRAMME
+---------
+Synchro : problème avec les accents et caractères particuliers !
+
+Liste des programme : OK
+Page programme :
+    - Image : voir avec gabarit du graphiste pour la taille originale
+    - Réserver : NOK sur la réservation de Ircam. Lien de la billeterie ???
+    - Playlist : OK
+    - Menu droite : OK
+    - PDF : voir si c'est possible de les extraires
+    - Infos pratique : OK
+
+Minh :
+OK synchro, staging ? config de la base ?
+NOK image avec chemin fileadmin/sites/manifeste-2013/
+
+TRIBUNES
+--------
+Liste des tribunes : OK
+Page tribunes : 
+    - ForumNet : contenus a propos du Colloque ? => synchro à prévoir ??? Voir avec Arshia
+    - Une tribune : manque auteur, fonction, date. Si possible liste de toutes les tribunes d'un auteur
+    - NOK : afficher les tribunes de l'Etincelle en premier
+    - Distinction Tribunes Commandés et Tribunes Invités (aspect différent)
+    - Quid de la distincetion Etincelle / Tribunes (confirmation Lundi)
+    - Masquer tribunes précédente et suivante. Idem sur artistes
+
+OK istinction Tribunes Commandés et Tribunes Invités : class faites. modification en CSS
+
+VIDEOS
+------
+Liste des vidéos : NOK manque descriptif
+Page vidéo : 
+  - Enlever leave a Reply puisque le formulaire existe déjà. 
+  - Commentaire : enlever "Vous pouvez utiliser..."
+
+Minh
+OK leave a reply
+OK Liste des vidéos : manque descriptif -> paramètrage dans l'admin, marche sur le dev
+
+ACADEMIE 
+--------
+OK
+
+INFO PRATIQUES
+--------------
+manque les id de réservation. Voir avec Alexandra Guzik pour les liens vers la billeterie.
+
+DIVERS
+------
+Backup de wordpress tous les soirs ?
+
+--------------------------------------------------------------------------------------------------------------
+
+TODO 2ND SPRINT
+
+
+Affichage de ScoopIt - Home page
+* Récupérer le titre, la date, la source (pas l'image) des 3 deniers et l'afficher sur la homepage (récupérer donc via une WP_Query les 3 derniers posts de la catégorie qui va bien)
+* ajouter un lien vers le scoopit Ircam au dessous des 3 derniers. Si besoin localiser la langue (fr|en)
+
+Minh
+amélioration WP Query avec tag scoopit
+langue EN
+
+Divers
+* vérifier que le mail de contact est bien envoyé et receptionné (cf. Arnaud pour paramétrer l'envoi de mail depuis le serveur de staging)
+* ajouter au formulaire de contact le choix (proposer une tribune / autres) comme fait avec Delphine sur le serveur de staging.
+
+Minh
+OK pour le mail, bien configuré
+OK choix tribune / autres
+
+I18N
+* Redirection si texte non traduit ? cf. wpml. Comprendre et expliquer à Delphine le fonctionnement de WPML
+
+Finalisation Importation Concert typo3
+* se connecter au typo3 en prod avec Arnaud (mardi)
+* import des events : 
+  * parser les url des images pour leur ajouter le prefix = http://www.ircam.fr/
+  * multiple events => mutiple post event. plus simple (mettre date de concert, dans date de post event)
+  * parser les docs liés pdf
+* update des concerts et non delete puis create
+
+Playlist
+OK (nom du widget : Playlist)* Faire un widget wordpress simple avec 1 champ contenant juste l'identifant de playlist ircam 
+OK * ajouter un identifiant playlist pour chaque évènement et ajouter le player (get_playlist dans functions.php)
+* ne pas oublier d'ajouter un titre 'Portail de la musique contemporaine' au player et une interaction 'ouvrir le player' (toujours dans functions.php, certainement dans get_playlist)
+
+Minh
+OK
+
+ICAL
+* ical : ajout à faire dans functions.php 
+  - ajouter 1 lien en dessous du calendrier vers le ical complet
+  - ajouter 1 lien dans le sidebar-event vers l'évènement en question
+(voir http://www.noeltock.com/web-design/wordpress/how-to-ical-with-custom-post-types/ et http://www.kinggary.com/archives/build-an-ical-feed-from-your-wordpress-posts-plugin/ ou encore http://wordpress.stackexchange.com/questions/56187/dynamic-ical-generator-outside-inside-wordpress)
+
+DONE 2ND SPRINT
+
+OK (je l'ai ajouté à la fin des pages artistes, tribunes, vidéo, 'astuce' page-nometa dans les templates, je l'ai conservé en haut pour le programme) * supprimer le share des pages vides de contenu type artiste
+
+Menu
+OK * Ajouter Home
+
+Templates
+
+OK * Home ajouter la phrase : "Proposez votre tribune" dans un petit div gros sur la page d'accueil qui renvoit vers le formulaire
+OK * Concert : Page détail : Enlever l'image
+OK * Concert : Page liste : liste events affichage chrono : Date Heure Titre Catégorie Résumé
+OK * Accueil pour les derniers articles : ajouter l'auteur, la date, le nombre de commentaires
+OK * Artist = détail : nom au dessus de l'image
+OK * Tribunes : liste détail : différé par code couleur (class css) Titre de la tribune, date, auteur
+OK (mais pas sûr ...) * Tribunes : afficher toutes les tribunes et les etincelles (mettre photo plus petites)
+OK * Tribunes : mettre l'étincelle en premier, ordonnés par choix éditorial (date de publication)
+OK * Tribunes : chrono 
+OK * Tribunes : afficher le nom de la catégorie et la description de cette catégorie = bug j'affiche pas les catégorie (étincelle doit être dynamique et récupére la catégorie)
+OK * Video : pour les catégorie : inscrire la description en dessous (sur le vif et description de la catégorie)
+OK aussi pour tous les types de contenu (video, text ...) : repositionner le 'leave a reply'
+OK * Academie : menu à droite
+
+
+Partages
+
+OK * rajouter share sur le texte introduction et l'edito (et par conséquence sur les pages via metadonnées donc)
+OK/KO (http://developers.facebook.com/docs/reference/plugins/like/ share est deprecated, mais affiche recommended) OK * ajouter le mail
+
+OK (css id="today")* calendrier : marquer la date du jour
+
+
+Contenu
+OK * Artiste, vidéo, tribunes => pas de texte intro
+
+Widget Sidebar
+OK * Mettre un texte 'proposer votre tribune' dans le sidebar standard
+OK (pas le dans, mieux, et nouveau widget, cf admin)* Commentaire: 'dans' => 'à propos de' et date : 08.06 'root' à propos de ... 08.06
+
+Functions.
+OK (en local ça fonctionne) * Bug : 'A decrouvrir aussi' ne s'affiche pas.
+
+KO * model concert : récupérer l'image de l'évènement (le champ illustration de typo3)
+
+--------------------------------------------------------------------------------------------------------------
+
+DONE 1ER SPRINT
+
+Concert
+OK * model concert : ajouter time_and_place
+OK * LIEU concert => time_and_place dans typo3, afficher dans le sidebar
+OK * Tarifs : practical_info de typo3
+OK * pas de liens sur catégorie des évènements (essentiellement dans la liste des concerts)
+OK * date du 29 et 30 mai, via comportement normal du plug'in
+
+
+
+Text 
+OK * ajouter l'auteur et la fonction 
+OK * mettre auteur et function dans le post text (faire single-text)
+
+Navigation
+OK * surbrillance du top menu lorsque l'on est dans un type de post particulier (ex. post artist => menu Artist doit surbriller)
+OK * supprimer l'etincelle, conserver tribune et y mettre 2 catégories
+
+Video 
+OK * model video : ajouter l'id video pour les vidéos et faire une belle page vidéo
+OK * possiblité de commenter
+
+Artiste
+OK * artistes : par ordre alphabétique : ajouter un champ nom et prénom
+
+Autre
+OK * insérer le formulaire d'abonnement à la newsletter (voir Laurent Ghys ou le site www), mais peu mieux faire
+
+POST META
+OK * localiser le "A découvrir aussi" en haut des metas
+OK * retirer dans les meta d'un post/page le post courant
+
+Contact
+OK * ajouter le captcha dans le formulaire de contact (http://contactform7.com/captcha/) 
+
+Lieu
+OK * Ajouter une page lieux dans le footer
+
+Slider
+OK pour le moment * bloquer le défilement du slider lorsque l'utilisateur a agit
+
+HOMEPAGE
+OK * home page : derniers articles : 4
+
+POST
+OK * mettre les possibilités de partage sur les post : 'print', 'email', 'facebook', 'twitter' 
+
+WEB2.0
+OK * menu à droite : dernier tweets, plusieurs hashtag/compte twitter
+
+Prévenir Delphine
+I18N
+OK * y a t'il possiblité de copier les taxonomie d'un post vers sa traduction : oui, lorsque le tag est traduit
+
+Date
+OK * Afficher les dates localisées, (notamment dans le slider), à partir du moment ou le wordpress est localisé
+
+--------------------------------------------------------------------------------------------------------------
+
+TODO webdesigner : 
+
+* uniformiser les tag html (h2 ? h3 ... pour les pages vidéos et tribunes)
+
+* id="tribune-submit" pour le bloc qui permet à l'internaute d'aller vers la page de contact pour envoyer une proposition de tribune
+
+* pour les tribunes, j'ai ajouté une class css pour différencier les 'commande' des autres (selon catégorie text_type)
+
+* uniformiser la manière dont son affichés les champs meta (ex page d'accueil les texte et page tribune, les textes, homogénéiser les tag html etc.)
+
+* voir : ajouter une icone play pour les images video en une
+
+* marquer le jour courant sur le calendrier, dans le css id="today"
+
+* voir pour la taille de la vidéo, en mode responsive petit écran (là c'est fixé pour grand écran)
+
+* taille vignette des 'portrait du jour' et 'vidéo du jour'
+
+* taille des images pour le slider (voir dans functions.php) (add_image_size('nivothumb', 460, 120, true);)
+
+* positionner les logo en page d'accueil au mieux.
+
+* pour le switch de langue, voici mon 'custom css' à mettre dans wpml
+#lang_sel_list, #lang_sel_list ul , #lang_sel_list  a, #lang_sel_list  li{
+    width: auto;
+height:auto;
+font-family: inherit;
+}
+#lang_sel_list a, #lang_sel_list a:visited, #lang_sel_list ul {
+    border: 0px solid black;
+    font-size:inherit;
+   
+}
+#lang_sel_list ul a, #lang_sel_list ul a:visited{
+   padding: 0px 0px;
+}
+#lang_sel_list a.lang_sel_sel {
+    font-weight: bold;
+}
+#lang_sel_list li {
+  float:none;
+}
+
+--------------------------------------------------------------------------------------------------------------
+
+TODO admin sys et mise en prod:
+* http://php.net/manual/en/book.image.php pour le Captcha
+OK * mettre wordpress en français (http://xavier.borderie.net/wp-fr/installation-de-wordpress-en-francais/)
+* tester le recommander de facebook
